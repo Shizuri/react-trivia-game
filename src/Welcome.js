@@ -1,3 +1,4 @@
+// The Welcome component is the default route where the user is greeted and presented with a choice of game difficulty
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 // import './App.css'
@@ -19,7 +20,7 @@ const Welcome = props => {
 	return (
 		<div className='Welcome'>
 			<h1>TriviaTime</h1>
-			<p>Pick your level of difficulty</p>
+			<div>Pick your level of difficulty</div>
 
 			<div>
 				<label>

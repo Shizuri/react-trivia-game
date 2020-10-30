@@ -1,4 +1,4 @@
-
+// This component is displayed if the user manually enters an incorrect URL
 import { useEffect } from 'react'
 // import './NotFound.css'
 

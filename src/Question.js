@@ -1,3 +1,4 @@
+// This component is holds most of the logic. It is responsible for fetching the data and presenting the appropriate display component.
 import { useEffect, useContext, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Context } from './context'

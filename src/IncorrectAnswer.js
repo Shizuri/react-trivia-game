@@ -1,3 +1,4 @@
+// This component is displayed if the user answers incorrectly
 import { Link, useLocation } from 'react-router-dom'
 import { useContext, useEffect } from 'react'
 import { Context } from './context'
