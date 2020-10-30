@@ -5,14 +5,17 @@ import './index.css'
 import './normalize.css'
 
 import App from './App'
+import { ContextProvider } from './context'
 import { BrowserRouter as Router } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Router>
-			<App />
-		</Router>
+		<ContextProvider>
+			<Router>
+				<App />
+			</Router>
+		</ContextProvider>
 	</React.StrictMode>,
 	document.getElementById('root')
 )
