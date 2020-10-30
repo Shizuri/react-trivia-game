@@ -1,10 +1,15 @@
+import useState from 'react'
 import './App.css'
 
+import Welcome from './Welcome'
+
 const App = () => {
+	const [score, setScore] = useState(0)
+	const [difficulty, setDifficulty] = useState('easy')
+
 	return (
 		<div className='App'>
-			<h1>TriviaTime</h1>
-			<p>Pick your level of difficulty</p>
+			main app
 		</div>
 	)
 }
