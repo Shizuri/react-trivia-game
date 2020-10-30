@@ -4,7 +4,7 @@ const Context = React.createContext()
 
 const ContextProvider = props => {
     const [score, setScore] = useState(0) // Keep the game score
-    const [question, setQuestion] = useState([]) // Fetched cards
+    const [question, setQuestion] = useState({}) // Fetched cards
 
     return (
         <Context.Provider value={{

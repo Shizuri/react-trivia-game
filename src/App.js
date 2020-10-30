@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// The App component is the main hub where React router does the switching
 import { Route, Switch } from 'react-router-dom'
 
 import './App.css'
@@ -10,13 +10,11 @@ import IncorrectAnswer from './IncorrectAnswer'
 import NotFound from './NotFound'
 
 const App = () => {
-	const [difficulty, setDifficulty] = useState('easy')
-
 	return (
 		<div className='App'>
 			<Switch >
 				<Route exact path='/'>
-					<Welcome difficulty={difficulty} />
+					<Welcome />
 				</Route>
 				<Route exact path='/question'>
 					<Question />
