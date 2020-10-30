@@ -34,9 +34,14 @@ const QuestionBoolean = props => {
         // This is so that the user will be prevented from simply going directly to a URL
     }
 
+    // Helper function needed to format the question text that comes from the API with some HTML Entities
+    const createMarkup = text => {
+        return { __html: text };
+    }
+
     return (
         <div className='QuestionBoolean'>
-            <div>{question}</div>
+            <div dangerouslySetInnerHTML={createMarkup(question)}></div>
             <div onClick={handleClick}>True</div>
             <div onClick={handleClick}>False</div>
         </div>
