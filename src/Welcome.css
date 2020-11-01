@@ -73,3 +73,33 @@ input[type='radio'] {
     width: 100%;
     box-shadow: 0px 10px 5px var(--color-button-accent);
 }
+
+@media (min-width: 600px) {
+    .Welcome {
+        width: 500px;
+    }
+}
+
+@media (min-width: 800px) {
+    .Welcome {
+        width: 600px;
+    }
+}
+
+@media (min-width: 600px) {
+    .Welcome {
+        width: 500px;
+    }
+}
+
+@media (max-width: 350px) {
+    .Welcome {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 260px) {
+    .Welcome {
+        font-size: 1rem;
+    }
+}
