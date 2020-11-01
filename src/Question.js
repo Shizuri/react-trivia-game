@@ -6,7 +6,7 @@ import { Context } from './context'
 import QuestionBoolean from './QuestionBoolean' // Display component
 import QuestionMulti from './QuestionMulti' // Display component
 
-// import './App.css'
+import './Question.css'
 
 const Question = props => {
     // Routing data needed to get the game difficulty
@@ -146,7 +146,7 @@ const Question = props => {
             {routeData.state === undefined ?
                 <div>Please play the game from the start. Just going to a URL does not work.</div>
                 :
-                <div>
+                <>
                     {loaded ?
                         question.type === 'boolean' ?
                             <QuestionBoolean
@@ -170,7 +170,7 @@ const Question = props => {
                         //     <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
                         // </div></div>
                     }
-                </div>
+                </>
             }
 
         </div>

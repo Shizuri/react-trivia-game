@@ -2,7 +2,8 @@
 import { useHistory } from 'react-router-dom'
 import { useContext } from 'react'
 import { Context } from './context'
-// import './App.css'
+
+import './QuestionBoolean.css'
 
 const QuestionBoolean = props => {
     // Extract the props from the Question component
@@ -41,9 +42,9 @@ const QuestionBoolean = props => {
 
     return (
         <div className='QuestionBoolean'>
-            <div dangerouslySetInnerHTML={createMarkup(question)}></div>
-            <div onClick={handleClick}>True</div>
-            <div onClick={handleClick}>False</div>
+            <div className='QuestionBoolean-question' dangerouslySetInnerHTML={createMarkup(question)}></div>
+            <div className='QuestionBoolean-answer-button' onClick={handleClick}>True</div>
+            <div className='QuestionBoolean-answer-button' onClick={handleClick}>False</div>
         </div>
     )
 }

@@ -2,7 +2,7 @@
 import { useHistory } from 'react-router-dom'
 import { useContext } from 'react'
 import { Context } from './context'
-// import './App.css'
+import './QuestionMulti.css'
 
 const QuestionMulti = props => {
     // Credit for this function at https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
@@ -64,9 +64,9 @@ const QuestionMulti = props => {
 
     return (
         <div className='QuestionMulti'>
-            <div dangerouslySetInnerHTML={createMarkup(question)}></div>
-            <ul>
-                {allAnswers.map(answer => <li key={answer} onClick={handleClick}>{answer}</li>)}
+            <div className='QuestionMulti-question' dangerouslySetInnerHTML={createMarkup(question)}></div>
+            <ul className='QuestionMulti-answer-list'>
+                {allAnswers.map(answer => <li className='QuestionMulti-answer-button' key={answer} onClick={handleClick}>{answer}</li>)}
             </ul>
         </div>
     )

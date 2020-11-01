@@ -2,6 +2,7 @@
 
 /* :root {
   --color-background: #8E63F6;
+  --color-background-gradient: linear-gradient(0deg, rgba(136, 94, 242, 1) 0%, rgba(155, 113, 255, 1) 35%);
   --color-dark-accent: #865EE6;
   --color-font: #FFFFFF;
   --color-button: #FF87B5;
@@ -11,11 +12,5 @@
   } */
 
 .App {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: var(--color-background);
-  color: var(--color-font);
   height: 100vh;
-  font-size: 1.9rem;
 }
