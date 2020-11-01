@@ -11,28 +11,15 @@
   --text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 } */
 
-.Question {
+.NotFound {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 90%;
     height: auto;
     min-height: 100vh;
-    background: none;
-}
-
-.Question-no-cheating {
-    text-align: center;
-    width: 90%;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    font-weight: 700;
+    background: var(--color-background);
+    background: var(--color-background-gradient);
     text-shadow: var(--text-shadow);
-}
-
-.Question-loading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }

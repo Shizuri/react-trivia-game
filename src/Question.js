@@ -7,6 +7,7 @@ import QuestionBoolean from './QuestionBoolean' // Display component
 import QuestionMulti from './QuestionMulti' // Display component
 
 import './Question.css'
+import './loadingAnimation.css'
 
 const Question = props => {
     // Routing data needed to get the game difficulty
@@ -144,7 +145,7 @@ const Question = props => {
     return (
         <div className='Question'>
             {routeData.state === undefined ?
-                <div>Please play the game from the start. Just going to a URL does not work.</div>
+                <div className='Question-no-cheating'>Please play the game from the start. Just going to a URL does not work.</div>
                 :
                 <>
                     {loaded ?
@@ -165,10 +166,7 @@ const Question = props => {
                         // This is so that the user will be prevented from simply going directly to a URL
                         :
                         // Loading animation
-                        <div>Loading...</div>
-                        // <div className='loadingio-spinner-spinner-ssc7g0lctwf'><div className='ldio-9mbi9huikr'>
-                        //     <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-                        // </div></div>
+                        <div className='Question-loading lds-ripple'><div></div><div></div></div>
                     }
                 </>
             }

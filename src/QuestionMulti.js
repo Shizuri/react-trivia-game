@@ -66,7 +66,7 @@ const QuestionMulti = props => {
         <div className='QuestionMulti'>
             <div className='QuestionMulti-question' dangerouslySetInnerHTML={createMarkup(question)}></div>
             <ul className='QuestionMulti-answer-list'>
-                {allAnswers.map(answer => <li className='QuestionMulti-answer-button' key={answer} onClick={handleClick}>{answer}</li>)}
+                {allAnswers.map(answer => <li className='QuestionMulti-answer-button' key={answer} onClick={handleClick} dangerouslySetInnerHTML={createMarkup(answer)}></li>)}
             </ul>
         </div>
     )

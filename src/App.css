@@ -1,16 +1,23 @@
 /* Reminder ↓ */
 
 /* :root {
-  --color-background: #8E63F6;
+  --color-background: rgb(155, 113, 255);
   --color-background-gradient: linear-gradient(0deg, rgba(136, 94, 242, 1) 0%, rgba(155, 113, 255, 1) 35%);
-  --color-dark-accent: #865EE6;
-  --color-font: #FFFFFF;
-  --color-button: #FF87B5;
-  --color-button-accent: #CB5A85;
-  --color-star: #FABB53;
+  --color-dark-accent: rgba(138, 98, 231 , 0.72);
+  --color-font: rgb(255, 255, 255);
+  --color-button: rgb(255, 135, 181);
+  --color-button-accent: rgb(203, 90, 133);
+  --color-star: rgb(250, 187, 83);
   --text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-  } */
+} */
 
 .App {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  min-height: 100vh;
+  background: var(--color-background);
+  background: var(--color-background-gradient);
 }

@@ -1,0 +1,82 @@
+/* Reminder ↓ */
+
+/* :root {
+  --color-background: rgb(155, 113, 255);
+  --color-background-gradient: linear-gradient(0deg, rgba(136, 94, 242, 1) 0%, rgba(155, 113, 255, 1) 35%);
+  --color-dark-accent: rgba(138, 98, 231 , 0.72);
+  --color-font: rgb(255, 255, 255);
+  --color-button: rgb(255, 135, 181);
+  --color-button-accent: rgb(203, 90, 133);
+  --color-star: rgb(250, 187, 83);
+  --text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+} */
+
+.CorrectAnswer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+}
+
+.CorrectAnswers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.CorrectAnswers-thumbs-up-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.CorrectAnswers-thumbs-up-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-color: var(--color-dark-accent);
+}
+
+.CorrectAnswers-thumbs-up {
+    font-size: 10rem;
+}
+
+.CorrectAnswers-next-button {
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-font);
+    background-color: var(--color-button);
+    padding: 26px;
+    border-radius: 50px;
+    margin-bottom: 13px;
+    width: 100%;
+    height: 86px;
+    box-shadow: 0px 10px 5px var(--color-button-accent);
+    margin-bottom: 100px;
+}
+
+.CorrectAnswers-right-arrow {
+    float: right;
+}
+
+.CorrectAnswer-no-cheating {
+    text-align: center;
+    width: 90%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-weight: 700;
+    text-shadow: var(--text-shadow);
+}

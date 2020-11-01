@@ -3,7 +3,7 @@
 }
 
 :root {
-  --color-background: rgb(136, 94, 242);
+  --color-background: rgb(155, 113, 255);
   --color-background-gradient: linear-gradient(0deg, rgba(136, 94, 242, 1) 0%, rgba(155, 113, 255, 1) 35%);
   --color-dark-accent: rgba(138, 98, 231 , 0.72);
   --color-font: rgb(255, 255, 255);
