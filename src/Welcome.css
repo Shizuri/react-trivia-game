@@ -86,12 +86,6 @@ input[type='radio'] {
     }
 }
 
-@media (min-width: 600px) {
-    .Welcome {
-        width: 500px;
-    }
-}
-
 @media (max-width: 350px) {
     .Welcome {
         font-size: 1.2rem;
