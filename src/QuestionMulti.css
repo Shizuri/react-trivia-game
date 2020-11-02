@@ -45,3 +45,27 @@
     margin-bottom: 13px;
     width: 100%;
 }
+
+@media (min-width: 600px) {
+    .QuestionMulti {
+        width: 500px;
+    }
+}
+
+@media (min-width: 800px) {
+    .QuestionMulti {
+        width: 600px;
+    }
+}
+
+@media (max-width: 350px) {
+    .QuestionMulti {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 260px) {
+    .QuestionMulti {
+        font-size: 1rem;
+    }
+}

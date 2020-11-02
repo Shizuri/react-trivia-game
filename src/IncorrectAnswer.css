@@ -43,14 +43,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 320px;
-    height: 320px;
+    width: 80vw;
+    height: 80vw;
     border-radius: 50%;
     background-color: var(--color-dark-accent);
 }
 
 .IncorrectAnswer-thumbs-down {
-    font-size: 10rem;
+    font-size: 40vw;
 }
 
 .IncorrectAnswer-score-container {
@@ -67,14 +67,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 320px;
-    height: 320px;
+    width: 80vw;
+    height: 80vw;
     border-radius: 50%;
     background-color: var(--color-dark-accent);
 }
 
 .IncorrectAnswer-score {
-    font-size: 13rem;
+    font-size: 40vw;
     font-weight: 800;
     text-shadow: var(--text-shadow);
 }
@@ -103,7 +103,6 @@
     float: right;
 }
 
-
 .IncorrectAnswer-no-cheating {
     text-align: center;
     width: 90%;
@@ -111,4 +110,34 @@
     margin-bottom: 70px;
     font-weight: 700;
     text-shadow: var(--text-shadow);
+}
+
+@media (min-width: 600px) {
+    .IncorrectAnswer {
+        width: 500px;
+    }
+    .IncorrectAnswer-thumbs-down-circle {
+        width: 500px;
+        height: 500px;
+    }
+    .IncorrectAnswer-thumbs-down {
+        font-size: 15rem;
+    }
+    .IncorrectAnswer-score-circle {
+        width: 500px;
+        height: 500px;
+    }
+    
+    .IncorrectAnswer-score {
+        font-size: 15rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .IncorrectAnswer {
+        font-size: 1.2rem;
+    }
+    .IncorrectAnswer-again-button {
+        height: auto;
+    }
 }

@@ -38,3 +38,27 @@
     margin-bottom: 13px;
     width: 100%;
 }
+
+@media (min-width: 600px) {
+    .QuestionBoolean {
+        width: 500px;
+    }
+}
+
+@media (min-width: 800px) {
+    .QuestionBoolean {
+        width: 600px;
+    }
+}
+
+@media (max-width: 350px) {
+    .QuestionBoolean {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 260px) {
+    .QuestionBoolean {
+        font-size: 1rem;
+    }
+}
