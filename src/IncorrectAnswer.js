@@ -46,7 +46,7 @@ const IncorrectAnswer = () => {
                     </div>
                     <div className='IncorrectAnswer-again-button-container'>
                         <Link style={!showThumbsDown ? { display: 'block' } : { display: 'none' }} className='IncorrectAnswer-again-button' to='/'>
-                            Again <i className='IncorrectAnswer-reload-icon fas fa-arrow-right'></i></Link>
+                            Again <i className='IncorrectAnswer-reload-icon fas fa-redo-alt'></i></Link>
                     </div>
                 </div>
             }
