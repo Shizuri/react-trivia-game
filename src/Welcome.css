@@ -74,6 +74,8 @@ input[type='radio'] {
     box-shadow: 0px 10px 5px var(--color-button-accent);
 }
 
+/* Media queries for larger(wider) screens */
+
 @media (min-width: 600px) {
     .Welcome {
         width: 500px;
@@ -85,6 +87,8 @@ input[type='radio'] {
         width: 600px;
     }
 }
+
+/* Media queries for unusually small screens */
 
 @media (max-width: 350px) {
     .Welcome {

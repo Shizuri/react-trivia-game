@@ -12,6 +12,7 @@ import NotFound from './NotFound'
 const App = () => {
 	return (
 		<div className='App'>
+			{/* Route the user to the exact path */}
 			<Switch >
 				<Route exact path='/'>
 					<Welcome />
@@ -25,6 +26,7 @@ const App = () => {
 				<Route exact path='/incorrect-answer'>
 					<IncorrectAnswer />
 				</Route>
+				{/* In case the user enter an incorrect path, lead them here */}
 				<Route>
 					<NotFound />
 				</Route>

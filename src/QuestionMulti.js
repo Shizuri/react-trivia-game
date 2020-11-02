@@ -1,4 +1,5 @@
-// Display component. There is no direct route to it.
+// Display component. There is no direct route to it. If the APi provides a boolean question the Question.js component
+// will call this one to display the data
 import { useHistory } from 'react-router-dom'
 import { useContext } from 'react'
 import { Context } from './context'
@@ -30,8 +31,9 @@ const QuestionMulti = props => {
     // Get the setScore function from the context API
     const { setScore } = useContext(Context)
 
-    // Put all of the answers in an array and randomize its order
+    // Create a new array from incorrectAnswers and correctAnswer so that we don't mutate any original values
     const allAnswers = [...incorrectAnswers, correctAnswer]
+    // Randomize the array's order
     shuffleArray(allAnswers)
 
     // React router history hook. Needed for transitioning without the user clicking on a link
@@ -43,11 +45,13 @@ const QuestionMulti = props => {
         if (text === correctAnswer) {
             // If the answer is correct, increment the score in the global state
             setScore(prevScore => prevScore += 1)
+            // Send the user to the correct location while also keeping the difficulty prop chain that prevents direct URL access
             history.push({
                 pathname: '/correct-answer',
                 state: { difficulty: difficulty }
             })
         } else {
+            // Send the user to the correct location while also keeping the difficulty prop chain that prevents direct URL access
             history.push({
                 pathname: '/incorrect-answer',
                 state: { difficulty: difficulty }

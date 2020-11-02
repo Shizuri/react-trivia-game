@@ -68,6 +68,8 @@
     margin-bottom: 100px;
 }
 
+/* I felt it unnecessary to pollute the DOM with more DIVs when this is a simple albeit not very modern solution */
+
 .CorrectAnswers-right-arrow {
     float: right;
 }
@@ -81,6 +83,8 @@
     text-shadow: var(--text-shadow);
 }
 
+/* Media queries for larger(wider) screens */
+
 @media (min-width: 600px) {
     .CorrectAnswer {
         width: 500px;
@@ -93,6 +97,8 @@
         font-size: 15rem;
     }
 }
+
+/* Media queries for unusually small screens */
 
 @media (max-width: 350px) {
     .CorrectAnswer {

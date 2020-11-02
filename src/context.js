@@ -8,6 +8,7 @@ const ContextProvider = props => {
 
     return (
         <Context.Provider value={{
+            // Provide these values. They are object key value pares, same as if "score: score" was written
             score,
             setScore,
             question,

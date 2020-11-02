@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+/* Because of the way React builds its project, all css files are available to all components */
+/* These variables will be used in all components */
 :root {
   --color-background: rgb(155, 113, 255);
   --color-background-gradient: linear-gradient(0deg, rgba(136, 94, 242, 1) 0%, rgba(155, 113, 255, 1) 35%);

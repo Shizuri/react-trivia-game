@@ -98,7 +98,7 @@ const Question = props => {
                     })
             }
 
-            // Reset token in the case of response_code 4
+            // Reset token in the case of response_code 4 by the API
             const resetToken = token => {
                 fetch(`https://opentdb.com/api_token.php?command=reset&token=${token}`)
                     // Handle success
@@ -125,6 +125,8 @@ const Question = props => {
 
             }
 
+            // Call the functions to perform their tasks
+
             // Get a new session token on a new session
             if (token === null) {
                 getToken()
@@ -140,6 +142,7 @@ const Question = props => {
             // This prevents a memory leak scenario on a fast component unmount
             return () => { isMounted = false }
         }
+        // This array are the values that can trigger an activation (besides the one of first component mount) of this useEffect.
     }, [routeData.state, setQuestion, loadedToken])
 
     return (
