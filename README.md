@@ -5,7 +5,7 @@ Play it on your phone or desktop.
 
 ## Technology
 
-This project was created with the use of the [React](https://reactjs.org/) JavaScript library. It uses only functional components and hooks for its functionality. The web application is a Single Page Application (SPA) and uses [React Router](https://reactrouter.com/) for the client side navigation. The project has a global state management system that uses the React Context API.
+This project was created with the use of the [React](https://reactjs.org/) JavaScript library. It uses only functional components and hooks for its functionality. The web application is a Single Page Application (SPA) and uses [React Router](https://reactrouter.com/) for the client side navigation. The project has a global state management system that uses the React Context API. All of the data is provided by the open and free [Trivia API](https://opentdb.com/api_config.php). Its Session Token system is used for managing the non-repetition of questions.
 
 ## Styling
 
